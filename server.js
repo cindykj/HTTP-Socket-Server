@@ -1,5 +1,5 @@
 const http = require('http');
-const pages = require('.pages');
+const pages = require('./pages');
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
@@ -47,7 +47,7 @@ server.on('error', (err) => {
   throw err;
 });
 
-// Listens for connections on port 6969
+// Listens for connections on PORT
 server.listen(PORT, HOST, () => {
   console.log('Server listening on');
 }); // closing for server.listen
